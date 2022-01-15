@@ -1,0 +1,59 @@
+package java1;
+
+public class DiffReturnTypes {
+	
+	static void test()
+	{
+		System.out.println("Void return type method");
+	}
+	
+	static int test1()
+	{ 
+		
+		System.out.println("Int return type method");
+		return 10;
+	}
+
+	static double test2()
+	{
+		
+		System.out.println("Double return type method");
+		return 20.1;
+	}
+	
+	static char test3()
+	{
+		
+		System.out.println("Character return type method");
+		return 'c';
+	}
+	
+	static String test4()
+	{
+		System.out.println("String type return type");
+		return "String";
+	}
+	
+	static float test5()
+	{
+		System.out.println("float type return type");
+		return 20.2f;
+	}
+	
+	public static void main(String[] args) 
+	{
+		test();
+		System.out.println("************");
+		System.out.println(test1());
+		System.out.println("************");
+		System.out.println(test2());
+		System.out.println("************");
+		System.out.println(test3());
+		System.out.println("************");
+		System.out.println(test4());
+		System.out.println("************");
+		System.out.println(test5());
+
+	}
+
+}
