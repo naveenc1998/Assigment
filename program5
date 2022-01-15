@@ -1,0 +1,30 @@
+package java1;
+
+public class Constructor
+{
+	int x;
+    Constructor()
+    {
+    	System.out.println("No Arguement constructor");
+    }
+    
+    Constructor(int a)
+    {
+    	x=a;
+    	System.out.println("Parameterized constructor");
+    }
+    void display()
+    {
+    	System.out.println(x);
+    }
+     
+    public static void main(String[] args)
+    {
+    	Constructor c=new Constructor();
+    	c.display();
+    	System.out.println("************");
+    	Constructor c1=new Constructor(10);
+    	c1.display();
+    	
+    }
+}
