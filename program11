@@ -1,0 +1,18 @@
+package java1;
+import java.util.Arrays;
+public class SearchString {
+
+	  public static void main(String[] args){
+
+	    String[] strings = {"Sunday","Monday","Tuesday","Wednesday","Thursday"};
+	    String toFind= "Tuesday";
+
+	    boolean found = Arrays.stream(strings).anyMatch(t -> t.equals(toFind));
+
+	    if(found)
+	      System.out.println(toFind + " is found.");
+	    else
+	      System.out.println(toFind + " is not found.");
+	  }
+	
+}
