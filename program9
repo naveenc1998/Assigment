@@ -1,0 +1,41 @@
+package java1;
+
+public class DimensionalArray {
+	
+	static void singleDimensional()
+     {
+	int[] number;
+    
+    number =  new int[10];
+    
+    number[0] = 11;
+    number[1] = 22;
+    number[2] = 33;
+    number[3] = 44;
+    number[4] = 55;
+    number[5] = 66;
+    number[6] = 77;
+    number[7] = 88;
+    number[8] = 99;
+    number[9] = 100;
+    
+    for(int i = 0; i < number.length; i++)
+        System.out.println(number[i]);
+}
+
+   static void multiDimensional()
+   {
+	   int[][] arr = { { 1, 2 }, { 3, 4 } }; 
+	   System.out.println("arr[0][0] = " + arr[0][0]); 
+   }
+
+	public static void main(String[] args) {
+		System.out.println("Single Dimensional Array");
+		singleDimensional();
+		System.out.println("**********************");
+		System.out.println("Multi Dimensional Array");
+		multiDimensional();
+
+
+}
+}
