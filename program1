@@ -1,0 +1,38 @@
+package java1;
+
+import java.util.Scanner;
+public class StringToData {
+
+		public static void main(String[] args) {
+			Scanner input = new Scanner(System.in);
+			System.out.println("please enter a string");
+			String s = input.nextLine();
+		    System.out.println(toInt(s));
+			System.out.println(todouble(s)); 
+			System.out.println(tolong(s));
+			System.out.println(toboolean(s));
+			System.out.println(toCharArray(s));
+			System.out.println(toByteArray(s));
+	        
+		}
+		public static int toInt(String s) {
+		    
+	    return Integer.parseInt(s);
+		}
+		public static double todouble(String s) {
+		 return Double.parseDouble(s);
+		}
+		public static long tolong(String s) {
+		    return Long.parseLong(s);
+		}
+		public static boolean toboolean(String s) {
+		    return Boolean.parseBoolean(s);
+		}
+		public static char[] toCharArray(String s) {
+		    return s.toCharArray();
+		}
+		public static byte[] toByteArray(String s) {
+		    return s.getBytes();
+		}
+
+}
