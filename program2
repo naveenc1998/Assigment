@@ -1,0 +1,37 @@
+package java1;
+
+public class AccessSpecifiers 
+{
+	  static void test()
+	 {
+		 System.out.println("default access specifiers method");
+	 }
+	 static public void test1()
+	  {
+		  System.out.println("Public Access specifiers method");
+	  }
+	 static private void test2()
+	  {
+		  System.out.println("Private Access specifiers method");
+	  }
+	 static protected void test3()
+	  {
+		  System.out.println("Protected Access Specifiers method");
+	  }
+	
+	
+
+}
+
+public class AccessSpecifiers1 extends AccessSpecifiers{
+	public static void main(String[] args)
+	{
+		AccessSpecifiers acs=new AccessSpecifiers();
+		acs.test();
+		acs.test1();
+		//acs.test2(); is accessed because it is private method
+		acs.test3();
+		
+	}
+
+}
